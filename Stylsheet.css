@@ -1,0 +1,254 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(255, 174, 43);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 0;
+}
+
+#logo{
+    width: 40px;
+    height: 46px;
+    background: url(./Imagenes/logo.png);   
+    background-size: cover;
+    font-size: 0;
+}
+
+#banner{
+    background: url(./imagenes/banner2.jpg) center center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1{
+    font-size: 5.2rem;
+}
+
+#banner a{
+    display: block;
+    outline: rgb(255, 174, 43) solid 1px;
+    outline-offset: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 13px 34px;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+#servicios{
+    padding: 30px;
+}
+
+#servicios h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#servicios .nov_pastillas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#servicios article{
+    width: 100%;
+}
+
+#servicios img{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#servicios .subtitulo{
+     color: rgb(255, 174, 43);
+     font-size: .9rem;
+     font-weight: 700;
+     margin-top: 10px;
+}
+
+#servicios h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+
+#clientes{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+}
+
+#clientes h2{
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#clientes .ag_parrafo{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#clientes .ag_pastillas{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#clientes .ag_pastillas figure{
+    width: 100%;
+}
+
+#clientes img{
+    border-radius: 50%;
+    flex-basis: 120px;
+    max-width: 200px;
+}
+
+
+
+#somosvira{
+    background-color: rgb(255, 174, 43);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#somosvira{
+    width: 100%;
+    padding: 50px 30px;
+}
+
+#somosvira figure{
+    line-height: 0;
+    width: auto;
+    height: fit-content;
+}
+
+#somosvira img{
+    width: 100%;
+    height: auto;
+}
+
+#somosvira h2{
+    font-size: 5.3rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+#somosvira p{
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+
+
+footer{
+    background-color:  rgb(27, 27, 27);
+    color: #a5a5a5;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+    margin-top: 20px;
+}
+
+#redes ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+#redes a{
+    color: #a5a5a5;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (min-width: 800px){
+    #servicios .nov_pastillas{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #servicios article{
+        width: calc(50% - 15px);
+    }
+
+    #somosvira div{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #somosvira a{
+        margin: 40px auto;
+    }
+
+    #clientes .ag_pastillas{
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    header{
+        flex-direction: row;
+    }
+
+    #servicios .nov_pastillas{
+        flex-wrap: nowrap;
+    }
+
+    #somosvira{
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    #somosvira h2{
+        font-size: 7rem;
+    }
+
+    #somosvira div{
+        width: 100%;
+        padding: 40px 60px;
+        margin: auto;
+        text-align: left;
+    }
+
+    #somosvira a{
+        margin: 40px 0;
+    }
+
+    #clientes .ag_pastillas{
+        width: 80%;
+    }
+}
+
